@@ -32,8 +32,6 @@ window.addEventListener('load', (event) => {
     alert('The page is fully loaded');
 });
 
-// ================ focus ================
-
 // ================ resize ================
 let boatImg = document.querySelector('.content-destination img');
 window.addEventListener('resize', () => {
@@ -45,12 +43,12 @@ window.addEventListener('fullscreenchange', () => {
     boatImg.src = 'img/destination.jpg';
 });
 
-// ================ select ================
+// ================ copy ================
+document.addEventListener('copy', () => {
+    alert('Dont steal my shit')
+})
 
-// ================ dblclick ================
-// const navLink = document.querySelectorAll('nav-link');
-// navLink.forEach(element => {
-//     element.addEventListener('dblclick', () => {
-//         navLink.style.color = 'green';
-//     })
-// })
+// ================ visibilitychange ================
+document.addEventListener('visibilitychange', () => {
+    alert("Oh, so you don't love me?")
+});
