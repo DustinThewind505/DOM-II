@@ -77,3 +77,12 @@ document.addEventListener('copy', () => {
 document.addEventListener('visibilitychange', () => {
     alert("Oh, so you don't love me?")
 });
+
+
+// ================ preventDefault() ================
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(element => {
+    element.addEventListener('click', event => {
+        event.preventDefault();
+    })
+});
